@@ -52,11 +52,12 @@ body {
     width: 100%;
     position: relative;
     z-index: 10;
-    background-color: transparent; /* clear sky */
-    color: #070707;                      /* SVG body */
+    background-color: transparent;
+    color: #070707;
     line-height: 0;
-    margin-top: -15vw; /* Massive upward pull to overlap text like mockup */
-    pointer-events: none; /* Let clicks pass through the SVG bounding box */
+    margin-top: -15vw;
+    margin-bottom: -8vw;
+    pointer-events: none;
 }
 
 .mountain-divider svg {
@@ -144,7 +145,8 @@ body {
 
 .hero-text-block {
     position: absolute;
-    bottom: 20%;
+    top: 60%;
+    transform: translateY(-50%);
     left: 5vw;
     max-width: 400px;
     z-index: 5;
@@ -226,31 +228,32 @@ body {
 
 /* ABOUT SECTION */
 .about {
-    padding: 8vw 8vw 10vw;
+    padding: 12vw 5vw 12vw;
     text-align: left;
     position: relative;
     z-index: 5;
 }
 
 .about-text {
-    font-family: var(--font-display);
-    font-size: clamp(1.3rem, 2.8vw, 2.8rem);
-    line-height: 1.35;
-    max-width: 1000px;
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    line-height: 1.4;
+    max-width: 900px;
     margin: 0;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
 }
 
 /* PROJECTS SECTION */
 .projects {
-    padding: 8vw 0;
+    padding: 12vw 0 8vw;
     position: relative;
     z-index: 5;
 }
 
 .section-heading {
     font-family: var(--font-display);
-    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     padding: 0 5vw;
     margin-bottom: 3rem;
     text-transform: uppercase;
@@ -318,7 +321,7 @@ body {
 
 /* EXPERIENCE SECTION */
 .experience {
-    padding: 8vw 5vw;
+    padding: 12vw 5vw 8vw;
     position: relative;
     z-index: 5;
 }
@@ -368,9 +371,9 @@ body {
 
 .exp-role h4 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     letter-spacing: 0.05em;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.1rem;
 }
 
 .exp-role p {
@@ -387,17 +390,17 @@ body {
 
 /* CONTACT SECTION */
 .contact {
-    padding: 8vw 5vw;
+    padding: 12vw 5vw 8vw;
     position: relative;
     z-index: 5;
 }
 
 .contact-form {
     max-width: 500px;
-    margin: 4rem auto 0;
+    margin: 3rem auto 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .contact-input {
@@ -438,17 +441,18 @@ body {
 
 /* FOOTER */
 .footer {
-    padding: 8vw 5vw 3rem;
+    padding: 12vw 5vw 3rem;
     text-align: center;
 }
 
 .footer-top {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .footer-cta {
     font-family: var(--font-display);
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(2.2rem, 4.5vw, 4rem);
+    line-height: 1.1;
 }
 
 .footer-email {
